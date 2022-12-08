@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bolão do Pombo - Meus Palpites</title>
+</head>
+<section id='navbar'>
+    <nav class='navbar navbar-expand-lg justify-content-end' id='nav'>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id='menu-icon'
+            alt="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class='nav-item'>
+                    <a class="nav-link active" aria-current="page" href="meuspalpites.html">MEUS PALPITES</a>
+                </li>
+                <li class='nav-item'>
+                    <a class="nav-link" href="ranking.html">RANKING</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href="resultados.html">RESULTADOS</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href="regulamento.html">REGULAMENTO</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' id="logoutBtn">SAIR</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+<body>
+    <section class="imgBGLogin">
+        <div>
+            <img src="assets/bg.png" id="imgBGLogin">
+        </div>
+    </section>
+    <section class="idForm">
+        <form action="/action_page2.php" method="post">
+            <h1>MEUS PALPITES</h1>
+            <div class="containerPalpites">
+                <label for="uname">
+                    <h2>Fase de Grupos</h2><br>
+                </label>
+                <h3>Domingo, 20/11 - 13h - Nome do Estádio: Al Bayt </h3>
+                <span>CATAR </span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> EQUADOR</span>
+                <h3>Segunda, 21/11 - 10h -Nome do Estádio: Khalifa Internacional</h3>
+                </label>
+                <span>INGLATERRA </span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> IRÃ</span>
+
+                <h3>Segunda, 21/11 - 13h -Nome do Estádio: Al Thumama</h3>
+                </label>
+                <span>SENEGAL </span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> HOLANDA</span>
+
+                <h3>Segunda, 21/11 - 16h -Nome do Estádio: Al Rayyan</h3>
+                </label>
+                <span>ESTADOS UNIDOS</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> PAÍS DE GALES</span>
+
+                <h3>Terça, 22/11 - 07h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>ARGENTINA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ARÁBIA SAUDITA</span>
+
+                <h3>Terça, 22/11 - 10h -Nome do Estádio: Cidade Educação</h3>
+                </label>
+                <span>DINAMARCA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> TUNÍSIA</span>
+
+                <h3>Terça, 22/11 - 13h -Nome do Estádio: Stadium 974</h3>
+                </label>
+                <span>MÉXICO</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> POLÔNIA</span>
+
+                <h3>Terça, 22/11 - 16h -Nome do Estádio: Al Janoub</h3>
+                </label>
+                <span>FRANÇA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> AUSTRÁLIA</span>
+
+                <h3>Quarta, 23/11 - 07h -Nome do Estádio: Al Bayt</h3>
+                </label>
+                <span>MARROCOS</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> CROÁCIA</span>
+
+                <h3>Quarta, 23/11 - 10h -Nome do Estádio: Khalifa Internacional</h3>
+                </label>
+                <span>ALEMANHA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> JAPÃO</span>
+
+                <h3>Quarta, 23/11 - 13h -Nome do Estádio: Al Thumama</h3>
+                </label>
+                <span>ESPANHA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> COSTA RICA</span>
+
+                <h3>Quarta, 23/11 - 16h -Nome do Estádio: Al Rayyan</h3>
+                </label>
+                <span>BÉLGICA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> CANADÁ</span>
+
+                <h3>Quinta, 24/11 - 07h -Nome do Estádio: Al Janoub</h3>
+                </label>
+                <span>SUÍÇA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> CAMARÕES</span>
+
+                <h3>Quinta, 24/11 - 10h -Nome do Estádio: Cidade Educação</h3>
+                </label>
+                <span>URUGUAI</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> COREIA DO SUL</span>
+
+                <h3>Quinta, 24/11 - 13h -Nome do Estádio: Stadium 974</h3>
+                </label>
+                <span>PORTUGAL</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> GANA</span>
+
+                <h3>Quinta, 24/11 - 16h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>BRASIL</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> SÉRVIA</span>
+
+                <h3>Sexta, 25/11 - 07h -Nome do Estádio: Al Rayyan</h3>
+                </label>
+                <span>PAÍS DE GALES</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> IRÃ</span>
+
+                <h3>Sexta, 25/11 - 10h -Nome do Estádio: Al Thumama</h3>
+                </label>
+                <span>QATAR</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> SENEGAL</span>
+
+                <h3>Sexta, 25/11 - 13h -Nome do Estádio: Khalifa Internacional</h3>
+                </label>
+                <span>HOLANDA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> EQUADOR</span>
+
+                <h3>Sexta, 25/11 - 16h -Nome do Estádio: Al Bayt</h3>
+                </label>
+                <span>INGLATERRA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ESTADOS UNIDOS</span>
+
+                <h3>Sábado, 26/11 - 07h -Nome do Estádio: Al Janoub</h3>
+                </label>
+                <span>TUNÍSIA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> AUSTRÁLIA</span>
+
+                <h3>Sábado, 26/11 - 10h -Nome do Estádio: Cidade da Educação</h3>
+                </label>
+                <span>POLÔNIA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ARÁBIA SAUDITA</span>
+
+                <h3>Sábado, 26/11 - 13h -Nome do Estádio: Stadium 974</h3>
+                </label>
+                <span>FRANÇA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> DINAMARCA</span>
+
+                <h3>Sábado, 26/11 - 16h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>ARGENTINA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> MÉXICO</span>
+
+                <h3>Domingo, 27/11 - 07h -Nome do Estádio: Al Rayyan</h3>
+                </label>
+                <span>JAPÃO</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> COSTA RICA</span>
+
+                <h3>Domingo, 27/11 - 10h -Nome do Estádio: Al Thumama</h3>
+                </label>
+                <span>BÉLGICA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> MARROCOS</span>
+
+                <h3>Domingo, 27/11 - 13h -Nome do Estádio: Khalifa Internacional</h3>
+                </label>
+                <span>CROÁCIA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> CANADÁ</span>
+
+                <h3>Domingo, 27/11 - 16h -Nome do Estádio: Al Bayt</h3>
+                </label>
+                <span>ESPANHA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ALEMANHA</span>
+
+                <h3>Segunda, 28/11 - 07h -Nome do Estádio: Al Janoub</h3>
+                </label>
+                <span>CAMARÕES</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> SÉRVIA</span>
+
+
+                <h3>Segunda, 28/11 - 10h -Nome do Estádio: Cidade da Educação</h3>
+                </label>
+                <span>COREIA DO SUL</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> GANA</span>
+
+                <h3>Segunda, 28/11 - 13h -Nome do Estádio: Stadium 974</h3>
+                </label>
+                <span>BRASIL</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> SUÍÇA</span>
+
+                <h3>Segunda, 28/11 - 16h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>PORTUGAL</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> URUGUAI</span>
+
+                <h3>Terça, 29/11 - 12h -Nome do Estádio: Khalifa Internacional</h3>
+                </label>
+                <span>EQUADOR</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> SENEGAL</span>
+
+                <h3>Terça, 29/11 - 12h -Nome do Estádio: Al Bayt</h3>
+                </label>
+                <span>HOLANDA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> QATAR</span>
+
+                <h3>Terça, 29/11 - 16h -Nome do Estádio: Al Rayyan</h3>
+                </label>
+                <span>PAÍS DE GALES</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> INGLATERRA</span>
+
+                <h3>Terça, 29/11 - 16h -Nome do Estádio: Al Thumama</h3>
+                </label>
+                <span>IRÃ</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ESTADOS UNIDOS</span>
+
+                <h3>Quarta, 30/11 - 12h -Nome do Estádio: Al Janoub</h3>
+                </label>
+                <span>AUSTRÁLIA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> DINAMARCA</span>
+
+                <h3>Quarta, 30/11 - 12h -Nome do Estádio: Cidade da Educação</h3>
+                </label>
+                <span>TUNÍSIA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> FRANÇA</span>
+
+                <h3>Quarta, 30/11 - 16h -Nome do Estádio: Stadium 974</h3>
+                </label>
+                <span>POLÔNIA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ARGENTINA</span>
+
+                <h3>Quarta, 30/11 - 16h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>ARÁBIA SAUDITA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> MÉXICO</span>
+
+                <h3>Quinta, 01/12 - 12h -Nome do Estádio: Al Rayyan</h3>
+                </label>
+                <span>CROÁCIA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> BÉLGICA</span>
+
+                <h3>Quinta, 01/12 - 12h -Nome do Estádio: Al Thumama</h3>
+                </label>
+                <span>CANADÁ</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> MARROCOS</span>
+
+                <h3>Quinta, 01/12 - 16h -Nome do Estádio: Khalifa Internacional</h3>
+                </label>
+                <span>JAPÃO</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ESPANHA</span>
+
+                <h3>Quinta, 01/12 - 16h -Nome do Estádio: Al Bayt</h3>
+                </label>
+                <span>COSTA RICA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ALEMANHA</span>
+
+                <h3>Sexta, 02/12 - 12h -Nome do Estádio: Al Janoub</h3>
+                </label>
+                <span>GANA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> URUGUAI</span>
+
+                <h3>Sexta, 02/12 - 12h -Nome do Estádio: Cidade da Educação</h3>
+                </label>
+                <span>COREIA DO SUL</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> PORTUGAL</span>
+
+                <h3>Sexta, 02/12 - 16h -Nome do Estádio: Stadium 974</h3>
+                </label>
+                <span>SÉRVIA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> SUÍÇA</span>
+
+                <h3>Sexta, 02/12 - 16h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>CAMARÕES</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> BRASIL</span>
+
+                <!-- Oitavas (Mata-Mata) -->
+
+                <label for="uname">
+                    <h2>Oitavas de final (Mata-Mata)</h2><br>
+                </label>
+
+                <h3>Sábado, 03/12 - 12h -Nome do Estádio: Khalifa Internacional</h3>
+                </label>
+                <span>HOLANDA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ESTADOS UNIDOS</span>
+
+                <h3>Sábado, 03/12 - 16h -Nome do Estádio: Al Rayyan</h3>
+                </label>
+                <span>ARGENTINA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> AUSTRÁLIA</span>
+
+                <h3>Domingo, 04/12 - 12h -Nome do Estádio: Al Thumama</h3>
+                </label>
+                <span>FRANÇA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> POLÔNIA</span>
+
+                <h3>Domingo, 04/12 - 16h -Nome do Estádio: Al Bayt</h3>
+                </label>
+                <span>INGLATERRA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> SENEGAL</span>
+
+                <h3>Segunda, 05/12 - 12h -Nome do Estádio: Al Janoub</h3>
+                </label>
+                <span>JAPÃO</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> CROÁCIA</span>
+
+                <h3>Segunda, 05/12 - 16h -Nome do Estádio: Stadium 974</h3>
+                </label>
+                <span>BRASIL</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> COREIA DO SUL</span>
+
+                <h3>Terça, 06/12 - 12h -Nome do Estádio: Cidade da Educação</h3>
+                </label>
+                <span>MARROCOS</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> ESPANHA</span>
+
+                <h3>Terça, 06/12 - 16h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>PORTUGAL</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>SUÍÇA</span><input type="number" placeholder="" name="palpiteB" required><span> SUÍÇA</span>
+
+                <!-- Quartas (Mata-Mata) -->
+
+                <label for="uname">
+                    <h2>Quartas de final (Mata-Mata)</h2><br>
+                </label>
+
+                <h3>Sexta, 09/12 - 12h -Nome do Estádio: Cidade da Educação</h3>
+                </label>
+                <span>??</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>??</span><input type="number" placeholder="" name="palpiteB" required><span> ??</span>
+
+                <h3>Sexta, 09/12 - 16h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>HOLANDA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>??</span><input type="number" placeholder="" name="palpiteB" required><span> ARGENTINA</span>
+
+                <h3>Sábado, 10/12 - 12h -Nome do Estádio: Al Thumama</h3>
+                </label>
+                <span>??</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>??</span><input type="number" placeholder="" name="palpiteB" required><span> ??</span>
+
+                <h3>Sábado, 10/12 - 16h -Nome do Estádio: Al Bayt</h3>
+                </label>
+                <span>INGLATERRA</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>X</span><input type="number" placeholder="" name="palpiteB" required><span> FRANÇA</span>
+
+                <!-- Semi (Mata-Mata) -->
+
+                <label for="uname">
+                    <h2>Semifinal (Mata-Mata)</h2><br>
+                </label>
+
+                <h3>Terça, 13/12 - 16h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>??</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>??</span><input type="number" placeholder="" name="palpiteB" required><span> ??</span>
+
+                <h3>Quarta, 14/12 - 16h -Nome do Estádio: Al Bayt</h3>
+                </label>
+                <span>??</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>??</span><input type="number" placeholder="" name="palpiteB" required><span> ??</span>
+
+                <!-- Terceiro e Quarto Colocado (Mata-Mata) -->
+
+                <label for="uname">
+                    <h2>Terceiro e Quarto (Mata-Mata)</h2><br>
+                </label>
+
+                <h3>Sábado, 17/12 - 16h -Nome do Estádio: Khalifa International</h3>
+                </label>
+                <span>??</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>??</span><input type="number" placeholder="" name="palpiteB" required><span> ??</span>
+
+                <!-- Final (Mata-Mata) -->
+
+                <br>
+                <label for="uname">
+                    <h2>Final (Mata-Mata)</h2><br>
+                </label>
+
+                <h3>Domingo, 18/12 - 12h -Nome do Estádio: Lusail Iconic</h3>
+                </label>
+                <span>??</span><input type="number" placeholder="" name="palpiteA" required>
+                <span>??</span><input type="number" placeholder="" name="palpiteB" required><span> ??</span>
+
+
+
+                <button id="submitBtn" type="button">SUBMETER PALPITES</button>
+            </div>
+        </form>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="/js/firebaseConfig.js"></script>
+    <script src="/js/logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div>Desenvolvido por Igor Pereira, <a href="samara.dev.br">Samara Fadigas</a> e Vitor Tanan</div>
+</footer>
+
+</html>
