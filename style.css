@@ -185,17 +185,15 @@ input[type=number] {
 .containerPalpites,
 .containerRanking,
 .containerWelcome {
-    display: block;
     height:420px;
+    width:520px;
     padding: 16px;
     text-align: left;
     font-style: normal;
     font-size: 12px;
     line-height: 15px;
     color: #eeeeee;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
+    }
 
 span.psw {
         float: right;
@@ -257,6 +255,11 @@ span.psw {
     background: #343a40;
     border-radius: 8px;
 }
+.containerPalpites,
+.containerResultados {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 
 input[type=number] {
     width: 90px;
@@ -293,10 +296,18 @@ td {
 }
 
 /*RESULTADOS PAGES*/
-.containerResultados {
-    width: max-content;
+.containerResultados,
+.containerRanking{
+    display:flex;
+    height:420px;
+    width:520px;
+    padding: 16px;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #eeeeee;
+    justify-content: center;
     text-align: center;
     background: #343a40;
     border-radius: 8px;
-    color: #eeeeee;
 }
