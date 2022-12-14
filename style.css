@@ -104,12 +104,13 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    height:30px;
 }
 
 /* INDEX PAGE */
 #imgBG {
     padding-top: 70px;
-    width: 20%;
+    width: 15%;
 }
 
 #h1Index {
@@ -181,7 +182,7 @@ input[type=number] {
     box-sizing: border-box;
 }
 
-.containerForm,
+.container,
 .containerPalpites,
 .containerRanking,
 .containerWelcome {
@@ -223,7 +224,7 @@ span.psw {
 }
 
 .socialBnt {
-    width: 32%;
+    width: 100%;
     height: 35px;
     margin: 8px 3px 0px 3px;
     background: #EEEEEE;
@@ -310,3 +311,4 @@ td {
     background: #343a40;
     border-radius: 8px;
 }
+
