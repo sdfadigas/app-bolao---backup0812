@@ -6,25 +6,26 @@ const resultadosTest = banco.collection('resultadosTest').doc("teste")
 
 
 
-const palpitesArray = [];
-const resultadosArray = [];
-
+let palpitesArray = [];
+let resultadosArray = [];
 palpites.get().then((doc) => {
   if (doc.exists) {
-    console.log('beleza')
-    palpitesArray.push(doc.data().palpites)
+    console.log(doc.data())
+    palpitesArray = Object.assign(doc.data())
+    console.log(palpitesArray)
   }
-}).then((doc) => {
+}).then(() => {
   resultadosTest.get().then((doc) => {
     if (doc.exists) {
-      console.log("ok");
-      resultadosArray.push(doc.data().resultadosTest)
+    console.log(doc.data())
+     resultadosArray = Object.assign (doc.data())
+     console.log(resultadosArray)
     }
-  }).then((doc) => {
+  }).then(() => {
     if (palpitesArray[0] === resultadosArray[0]) {
       console.log("okbeleo")
     } else { console.log('errou') }
   })
-})
+}) 
 
 
