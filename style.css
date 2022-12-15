@@ -254,7 +254,21 @@ span.psw {
     text-align: center;
     background: #343a40;
     border-radius: 8px;
+    font-size:1.5em;
+    justify-content:center;
+    align-items:center;
 }
+
+.containerPalpites
+ {  
+    text-align: center;
+    background: #343a40;
+    border-radius: 8px;
+    font-size:1.5em;
+    justify-content:center;
+    align-items:center;
+}
+
 .containerPalpites,
 .containerResultados {
     overflow-y: scroll;
@@ -312,3 +326,8 @@ td {
     border-radius: 8px;
 }
 
+.flag-icon {
+    border-radius:100%;
+    font-size:1.5em;
+    
+}

@@ -6,14 +6,15 @@ const palpiteC1 = document.querySelector('.palpiteC1');
 const palpiteC2 = document.querySelector('.palpiteC2');
 const submit = document.getElementById("submitBtn");
 const banco = firebase.firestore();
-const user = firebase.auth().currentUser;
+const user = localStorage.getItem("emailUser")
 
 
   submit.addEventListener('click', (event) => {
     event.preventDefault();
     confirm("confirmar palpites?");
-    window.history.back();
-    banco.collection('palpites').doc("user").set({
+    console.log(localStorage.getItem("emailUser"))
+  //  window.history.back();
+    banco.collection('palpites').doc(user).set({
       palpiteA1: palpiteA1.value,
       palpiteA2: palpiteA2.value,
       palpiteB1: palpiteB1.value,
