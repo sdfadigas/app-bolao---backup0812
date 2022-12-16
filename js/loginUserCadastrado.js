@@ -7,6 +7,7 @@ loginBtn.addEventListener('click', function () {
     .then(function () {
       alert('Bem vindo de volta' + emailInput.value);
       window.location.href = "welcome.html"
+      localStorage.setItem("emailUser", auth.currentUser.email)
     })
     .catch(function (error) {
       console.error(error.code);
