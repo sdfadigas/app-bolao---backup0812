@@ -118,6 +118,7 @@ a:link:hover {
     color: #FFDE59;
 }
 
+
 /* INDEX PAGE */
 #imgBG {
     padding-top: 70px;
@@ -135,10 +136,12 @@ a:link:hover {
 }
 
 #initialBtn,
-#submitBtn {
+#submitBtn,
+#simulaBtn {
     height: 35px;
     width: fit-content;
     padding: 5px;
+    margin:15px;
     color: #222222;
     font-style: normal;
     font-weight: 700;
@@ -149,6 +152,13 @@ a:link:hover {
     border-radius: 8px;
     box-shadow: 0px 4px 4px 0px #00000040 inset;
     cursor: pointer;
+}
+.cadastro {
+    color: rgb(53, 59, 65, 0.9) !important;
+}
+.container {
+    color:#eeeeee;
+    text-align: start;
 }
 
 
@@ -164,6 +174,7 @@ a:link:hover {
 }
 
 h1 {
+    padding: 15px;
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
@@ -258,6 +269,7 @@ span.psw {
     border-radius: 8px;
     border-style: none;
     cursor: pointer;
+   
 }
 
 .fa-google {
@@ -340,22 +352,26 @@ td {
     border-spacing: 0;
     border: 1px solid #343a40;
     padding: 4px;
+    font-size:18px;
 }
 
 .simulador,
 .pts {
     text-align: center;
+    font-size:18px !important;
 
 }
 
 .containerRegulamento {
+    display: flex;
     background: #343a40;
-    width: 100%;
+    width: 100vw;
     border-radius: 8px;
     padding: 0;
     text-align: left;
     color: #eeeeee;
-
+    flex-direction: column;
+    align-items: center;
 }
 
 .simulador {
