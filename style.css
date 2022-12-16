@@ -377,10 +377,23 @@ td {
     background: #343a40;
     border-radius: 8px;
 }
+td {
+    width:50wv;
+}
+
+.right
+ {
+    display:flex;
+    justify-content:left;
+}
+
+.left {
+    display:flex;
+    justify-content:right;
+}
 
 .flag-icon {
     border-radius: 100%;
     font-size: 1em;
     padding:2px;
-
 }
