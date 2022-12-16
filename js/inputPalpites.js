@@ -14,7 +14,7 @@ const user = localStorage.getItem("emailUser")
     event.preventDefault();
     confirm("confirmar palpites?");
     console.log(localStorage.getItem("emailUser"))
-  //  window.history.back();
+    window.location.href="ranking";
     banco.collection('palpites').doc(user).set({
       palpiteA1: palpiteA1.value,
       palpiteA2: palpiteA2.value,
