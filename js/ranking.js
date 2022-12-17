@@ -13,10 +13,11 @@ const resultadosTest = banco.collection('resultadosTest').doc("teste")
 
 let palpitesArray = [];
 let resultadosArray = [];
+
 palpites.get().then((doc) => {
   if (doc.exists) {
     palpitesArray = Object.assign(doc.data())
-    console.log(palpitesArray)
+   // containerRanking.innerHTML = (JSON.stringify(palpitesArray))
   }
 }).then(() => {
   resultadosTest.get().then((doc) => {
@@ -24,12 +25,11 @@ palpites.get().then((doc) => {
      resultadosArray = Object.assign(doc.data())
      console.log(resultadosArray)
     }
-  }).then(() => {
-    if (palpitesArray[0] == resultadosArray[0]) {
-      console.log(palpitesArray[0])
-      //alert("você acertou o resultado do jogo Catar e Equador")
-    } else { console.log('errou') }
-  })
-}) 
+  }).then(() => {  
+    if (JSON.stringify(palpitesArray[0]) === JSON.stringify(resultadosArray[0])) {
+    //alert("você acertou o resultado do jogo Catar e Equador")
+   } else { console.log('errou') }
+ })})
+
 
 
