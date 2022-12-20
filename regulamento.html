@@ -23,11 +23,11 @@
               <li class='nav-item'>
                   <a class="nav-link active" aria-current="page" href="meuspalpites.html">PALPITES</a>
               </li>
+             <!--<li class='nav-item'>
+                    <a class="nav-link" href="ranking.html">MEUS RESULTADOS</a>
+                </li>--> 
               <li class='nav-item'>
-                  <a class="nav-link" href="ranking.html">MEUS RESULTADOS</a>
-              </li>
-              <li class='nav-item'>
-                  <a class='nav-link' href="resultados.html">RESULTADOS ODS JOGOS</a>
+                  <a class='nav-link' href="resultados.html">RESULTADOS DOS JOGOS</a>
               </li>
               <li class='nav-item'>
                   <a class='nav-link' href="regulamento.html">REGULAMENTO</a>
@@ -87,12 +87,12 @@
           <div class="simulador">
           <label for="uname"><br><h2>SIMULADOR</h2></label>
           <h3>Palpite</h3>
-     <input type="number" placeholder="" id="simulacaoA1" required>
-      <span>X</span><input type="number" placeholder="" id="simulacaoA2" required>
+     <input type="number" min="0" placeholder="" id="simulacaoA1" required>
+      <span>X</span><input type="number" min="0" placeholder="" id="simulacaoA2" required>
       <h3>Resultado</h3>
       </label>
-      <input type="number" placeholder="" id="simulacaoB1" required>
-      <span>X</span><input type="number" placeholder="" id="simulacaoB2" required>
+      <input type="number" min="0"  placeholder="" id="simulacaoB1" required>
+      <span>X</span><input type="number" min="0" placeholder="" id="simulacaoB2" required>
     </div>
       <br> <button id="simulaBtn" type="submit">SIMULAR</button>
       <BR>

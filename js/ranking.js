@@ -2,7 +2,7 @@
 const containerRanking = document.querySelector('.containerRanking');
 const texto = "clique aqui";
 const ancora = "meuspalpites.html";
-containerRanking.innerHTML = "Você ainda não palpitou" + texto.link(ancora) + "  para inserir seus palpites"
+//containerRanking.innerHTML = "Você ainda não palpitou" + texto.link(ancora) + "  para inserir seus palpites"
 
 const banco = firebase.firestore();
 const user = localStorage.getItem("emailUser");
@@ -17,7 +17,7 @@ let resultadosArray = [];
 palpites.get().then((doc) => {
   if (doc.exists) {
     palpitesArray = Object.assign(doc.data())
-   // containerRanking.innerHTML = (JSON.stringify(palpitesArray))
+    console.log(palpitesArray)
   }
 }).then(() => {
   resultadosTest.get().then((doc) => {
@@ -27,7 +27,6 @@ palpites.get().then((doc) => {
     }
   }).then(() => {  
     if (JSON.stringify(palpitesArray[0]) === JSON.stringify(resultadosArray[0])) {
-    //alert("você acertou o resultado do jogo Catar e Equador")
    } else { console.log('errou') }
  })})
 
