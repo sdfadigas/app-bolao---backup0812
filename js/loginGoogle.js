@@ -10,6 +10,7 @@ auth.onAuthStateChanged((val) => {
         console.log(auth.currentUser)
         localStorage.setItem("emailUser", auth.currentUser.email)
         window.location.href="welcome.html"
+        
     }
 });
 
