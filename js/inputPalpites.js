@@ -1,9 +1,8 @@
 const palpiteA = document.querySelectorAll('.palpiteA');
 const palpiteB = document.querySelectorAll('.palpiteB');
-
-//copiar e colar essas const de cima e mudar o nome pra #palpiteD1, #palpiteD2 e assim sucessivamente até completar 108 linhas
 const submit = document.getElementById("submitBtn");
 const banco = firebase.firestore();
+//inicializa uma instância do Firestore do Firebase e a armazena em uma variável constante chamada banco. 
 const user = localStorage.getItem("emailUser")
 const title = document.getElementById("title")
 const subtitle = document.getElementById("subtitle")
@@ -31,4 +30,5 @@ const form = document.querySelectorAll('input[type=number]')
     banco.collection('palpites').doc(user).set({...objetoPalpiteA, ...objetoPalpiteB
      
     })
+    //acessa a coleção palpites no banco de dados Firestore e adiciona um novo documento com o ID igual ao valor armazenado na variável user. O conteúdo desse documento é um objeto que contém todos os valores dos palpites armazenados nos objetos objetoPalpiteA e objetoPalpiteB. O operador spread (...) é usado para combinar os dois objetos em um único objeto antes de salvá-lo no banco de dados.
   });
